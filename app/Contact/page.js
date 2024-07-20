@@ -2,11 +2,16 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { IoIosSend } from "react-icons/io";
+import { GiExitDoor } from "react-icons/gi";
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState({});
     const router = useRouter();
+
+    function handleHome() {
+        router.push("/");
+      }
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -79,10 +84,14 @@ export default function Contact() {
           />
           {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
         </div>
-        <div className="text-center">
-          <button type="submit" className="bg-green-500 hover:bg-gren-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <div className="text-center flex  justify-center ">
+          <button type="submit" className="bg-green-500 hover:bg-gren-700 mb-2 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
             <IoIosSend className="h-6 w-6 mr-2 inline" />
             Submit
+          </button>
+          <button type="submit" onClick={handleHome} className="bg-green-500 flex hover:bg-gren-700 mb-2 ml-4 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <GiExitDoor className="h-6 w-6 mr-2" />
+            Back
           </button>
         </div>
       </form>
