@@ -12,6 +12,7 @@ export default function Resume() {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white p-8">
+    
       <header className="text-center my-12">
         <h1 className="text-5xl font-extrabold">Abdel Mouzahir</h1>
         <p className="text-xl text-gray-400 mt-2">Junior Software Developer</p>
