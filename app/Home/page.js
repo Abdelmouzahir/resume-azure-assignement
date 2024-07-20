@@ -37,7 +37,7 @@ export default function Home() {
           
         </div>
         <div className="flex flex-col md:flex-row mt-4 items-center md:items-start justify-center space">
-        <button onClick={handleHome} className="  bg-blue-400 flex  text-white text-lg px-6 py-1 rounded-md hover:bg-blue-700 mt-2 mr-2">
+        <button onClick={handleHome} className="  bg-green-400 flex  text-white text-lg px-6 py-1 rounded-md hover:bg-green-700 mt-2 mr-2">
         <GiExitDoor className="h-6 w-6 mr-2" />
         Back</button>
        </div>
