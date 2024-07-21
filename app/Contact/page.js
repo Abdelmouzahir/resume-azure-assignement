@@ -1,17 +1,15 @@
 "use client";
 import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import { IoIosSend } from "react-icons/io";
 import { GiExitDoor } from "react-icons/gi";
+import Link from 'next/link';
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState({});
-    const router = useRouter();
+ 
 
-    function handleHome() {
-        router.push("/");
-      }
+    
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -38,7 +36,6 @@ export default function Contact() {
       console.log("Form submitted successfully", formData);
       alert("Form submitted successfully");
       setFormData({ name: '', email: '', message: '' });
-      router.push("/");
     }
   };
 
@@ -89,10 +86,10 @@ export default function Contact() {
             <IoIosSend className="h-6 w-6 mr-2 inline" />
             Submit
           </button>
-          <button type="submit" onClick={handleHome} className="bg-green-500 flex hover:bg-gren-700 mb-2 ml-4 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <Link type="submit" href={"/"} className="bg-green-500 flex hover:bg-gren-700 mb-2 ml-4 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
           <GiExitDoor className="h-6 w-6 mr-2" />
             Back
-          </button>
+          </Link>
         </div>
       </form>
     </div>

@@ -1,14 +1,10 @@
 "use client";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { GiExitDoor } from "react-icons/gi";
 
 
 export default function Home() {
-    const router = useRouter();
-
-    function handleHome() {
-        router.push("/");
-      }
+   
   return (
     <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center justify-center">
       <div className="text-center px-4 md:px-0">
@@ -37,9 +33,9 @@ export default function Home() {
           
         </div>
         <div className="flex flex-col md:flex-row mt-4 items-center md:items-start justify-center space">
-        <button onClick={handleHome} className="  bg-green-400 flex  text-white text-lg px-6 py-1 rounded-md hover:bg-green-700 mt-2 mr-2">
+        <Link href={"/"} className="  bg-green-400 flex  text-white text-lg px-6 py-1 rounded-md hover:bg-green-700 mt-2 mr-2">
         <GiExitDoor className="h-6 w-6 mr-2" />
-        Back</button>
+        Back</Link>
        </div>
       </div>
       <footer className="mt-8 pt-[10rem] flex flex-col items-center text-sm text-gray-500">

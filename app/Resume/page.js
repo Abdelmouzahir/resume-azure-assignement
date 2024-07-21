@@ -1,14 +1,10 @@
 "use client";
 import React from "react";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { GiExitDoor } from "react-icons/gi";
 
 export default function Resume() {
-    const router = useRouter();
-
-    function handleHome() {
-        router.push("/");
-      }
+   
 
   return (
     <div className="min-h-screen bg-gray-900 text-white p-8">
@@ -75,9 +71,9 @@ export default function Resume() {
         </div>
       </section>
       <div className=" justify-center flex">
-           <button onClick={handleHome} className="  bg-green-400 flex  text-white text-lg px-6 py-1 rounded-md hover:bg-green-700 mt-2 mr-2">
+           <Link href={"/"} className="  bg-green-400 flex  text-white text-lg px-6 py-1 rounded-md hover:bg-green-700 mt-2 mr-2">
             <GiExitDoor className="h-6 w-6 mr-2" />
-           Back</button>
+           Back</Link>
        </div>
     </div>
   );
