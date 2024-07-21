@@ -2,22 +2,22 @@
     "routes": [
       {
         "route": "/contact",
-        "rewrite": "/contact.html",
+        "serve": "/contact.html",
         "statusCode": 200
       },
       {
         "route": "/",
-        "rewrite": "/index.html",
+        "serve": "/index.html",
         "statusCode": 200
       },
       {
         "route": "/home",
-        "rewrite": "/home.html",
+        "serve": "/home.html",
         "statusCode": 200
       },
       {
         "route": "/resume",
-        "rewrite": "/resume.html",
+        "serve": "/resume.html",
         "statusCode": 200
       }
     ]
