@@ -1,25 +1,6 @@
 {
-    "routes": [
-      {
-        "route": "/contact",
-        "redirect": "/contact",
-        "statusCode": 301
-      },
-      {
-        "route": "/",
-        "redirect": "/",
-        "statusCode": 301
-      },
-      {
-        "route": "/home",
-        "redirect": "/home",
-        "statusCode": 301
-      },
-      {
-        "route": "/resume",
-        "redirect": "/resume",
-        "statusCode": 301
-      }
-    ]
+   
+    
+
   }
   
