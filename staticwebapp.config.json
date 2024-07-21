@@ -3,22 +3,22 @@
       {
         "route": "/contact",
         "redirect": "/contact",
-        "statusCode": 200
+        "statusCode": 301
       },
       {
         "route": "/",
         "redirect": "/",
-        "statusCode": 200
+        "statusCode": 301
       },
       {
         "route": "/home",
         "redirect": "/home",
-        "statusCode": 200
+        "statusCode": 301
       },
       {
         "route": "/resume",
         "redirect": "/resume",
-        "statusCode": 200
+        "statusCode": 301
       }
     ]
   }
