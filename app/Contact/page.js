@@ -86,7 +86,7 @@ export default function Contact() {
             <IoIosSend className="h-6 w-6 mr-2 inline" />
             Submit
           </button>
-          <Link type="submit" href={"/"} className="bg-green-500 flex hover:bg-gren-700 mb-2 ml-4 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <Link type="submit" href="/" className="bg-green-500 flex hover:bg-gren-700 mb-2 ml-4 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
           <GiExitDoor className="h-6 w-6 mr-2" />
             Back
           </Link>

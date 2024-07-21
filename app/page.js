@@ -20,15 +20,15 @@ export default function Home() {
       <div className="mb-4 flex">
         <Link
           className=" bg-orange-300 flex  text-white text-lg px-6 py-1 rounded-xl hover:bg-orange-600 mt-2 mr-2"
-          href={"/home"}
+          href="/home"
         > <FaHome className="h-6 w-6 mr-2" /> Home </Link>
         <Link
           className=" bg-orange-300 text-white flex text-lg px-6 py-1 rounded-xl hover:bg-orange-600 mt-2 mr-2"
-          href={"/contact"}
+          href="/contact"
         > <FaClipboardList className="h-6 w-6 mr-2" /> Resume </Link>
         <Link
           className=" bg-orange-300 flex text-white text-lg px-6 py-1 rounded-xl hover:bg-orange-600 mt-2 mr-2"
-          href={"/resume"}
+          href="/resume"
         > <MdContactMail className="h-6 w-6 mr-2" />  Contact </Link>
       </div>
       </div>

@@ -71,7 +71,7 @@ export default function Resume() {
         </div>
       </section>
       <div className=" justify-center flex">
-           <Link href={"/"} className="  bg-green-400 flex  text-white text-lg px-6 py-1 rounded-md hover:bg-green-700 mt-2 mr-2">
+           <Link href="/" className="  bg-green-400 flex  text-white text-lg px-6 py-1 rounded-md hover:bg-green-700 mt-2 mr-2">
             <GiExitDoor className="h-6 w-6 mr-2" />
            Back</Link>
        </div>
