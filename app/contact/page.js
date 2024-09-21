@@ -7,9 +7,6 @@ import Link from 'next/link';
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState({});
- 
-
-    
 
   const handleChange = (e) => {
     const { name, value } = e.target;
